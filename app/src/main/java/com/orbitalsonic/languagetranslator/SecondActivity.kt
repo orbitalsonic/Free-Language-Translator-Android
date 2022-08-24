@@ -12,9 +12,6 @@ import kotlinx.coroutines.launch
 
 class SecondActivity : AppCompatActivity() {
 
-    private val handler = CoroutineExceptionHandler { _, exception ->
-        Log.e("TranslatorTag", "$exception")
-    }
     private lateinit var binding: ActivitySecondBinding
     private val fromLanguage = "en"
     private val toLanguage = "hi"
